@@ -7,7 +7,9 @@ import convertRegion from '../../util/convert'
 
 const TreeMap = ({ data, onChange }) => {
 
-  const colors = ['#191970', '#313695', '#4575b4', '#74add1', '#abd9e9', '#e0f3f8', '#fee090', '#fdae61', '#f46d43', '#d73027', '#a50026']
+  //const colors = ['#191970', '#313695', '#4575b4', '#74add1', '#abd9e9', '#e0f3f8', '#fee090', '#fdae61', '#f46d43', '#d73027', '#a50026']
+  const colors = ['#d73027','#e0f3f8','#67E0E3','#32C5E9','#37A2DA','#9d96f5','#4575b4','#a50026']
+
   const children = data.children.map((child, index) => {
     return {
       ...child,
@@ -16,6 +18,9 @@ const TreeMap = ({ data, onChange }) => {
       },
     };
   });
+
+  console.log(children)
+
   const treemapOption = {
     tooltip: {
       trigger: 'item',

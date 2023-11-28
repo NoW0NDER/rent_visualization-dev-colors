@@ -10,7 +10,7 @@ const RelationGraph = ({ nodes_data, links_data, onChange }) => {
 
 
     const [option, setOption] = useState({});
-    const colors = ['#191970', '#313695', '#4575b4', '#74add1', '#abd9e9', '#e0f3f8', '#fee090', '#fdae61', '#f46d43', '#d73027', '#a50026']
+    //const colors = ['#191970', '#313695', '#4575b4', '#74add1', '#abd9e9', '#e0f3f8', '#fee090', '#fdae61', '#f46d43', '#d73027', '#a50026']
 
     // const modifiedNodes = nodes_data.map((node, index) => ({
     //     ...node,
@@ -22,6 +22,8 @@ const RelationGraph = ({ nodes_data, links_data, onChange }) => {
     //   console.log(nodes_data)
 
     //   console.log(modifiedNodes)
+
+
 
 
     useEffect(() => {

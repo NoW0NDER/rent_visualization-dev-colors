@@ -26,7 +26,9 @@ const PieChartByArea = ({ type, area, onChange }) => {
     const dataset = getDataset(type)
 
     const data = dataset[area]
-    const colors = ['#123456', '#789abc', '#def012', '#345678'];
+    // const colors = ['#123456', '#789abc', '#def012', '#345678'];
+    const colors = ['#191970','#4575b4','#74add1','#e0f3f8','#f46d43', '#a50026'];
+
     const modifyData = (data) => {
         return Object.keys(data).map((key,index )=> ({
             name: key,
